@@ -1,0 +1,12 @@
+[package]
+name = "chainlink-price-monitor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = { version = "0.17.0", features = ["ws", "rustls", "abigen"] }
+tokio = { version = "1.19.2", features = ["full"] }
+eyre = { version = "0.6.8" }
+dotenv = { version = "0.15.0" }
